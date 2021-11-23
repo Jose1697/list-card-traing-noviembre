@@ -1,0 +1,1 @@
+export { ListCardTraingNoviembre } from './src/ListCardTraingNoviembre.js';
