@@ -45,7 +45,7 @@ export class ListCardTraingNoviembre extends LitElement {
   }
 
   _onSelectCard(e){
-    console.log('Fire _onSelectCard',detail);
+    console.log('Fire _onSelectCard',e);
     this.dispatchEvent(new CustomEvent('selection-card',{
       bubbles: true,
       composed:true,
@@ -67,7 +67,7 @@ export class ListCardTraingNoviembre extends LitElement {
                   info=${i.info}
                   list-items=${JSON.stringify(i.listItems)} 
                   button-name=${i.buttonName}
-                  @actionInsurance=${this._onSelectCard}>
+                  @selection-insurance=${this._onSelectCard}>
                 </card-traning>
               </div> 
           `)}
